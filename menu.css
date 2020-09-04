@@ -1,0 +1,62 @@
+html, body{
+	height:100vh;
+}
+
+body{
+	overflow-x:hidden;
+	/*overflow-y:hidden;*/
+	margin:0;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+h2{
+	/*display: flex;*/
+	margin-left:auto;
+	margin-right: auto;
+}
+
+li{
+	list-style-type: none;
+}
+
+img{
+	display: flex;
+	margin-left:22px;
+	margin-right:22px;
+}
+
+.menu{
+	display:flex;
+	flex-direction: row;
+	background-color:#23332D;
+	width:100%;
+	flex-wrap: wrap;
+}
+
+.container{
+	display:flex;
+	flex-direction: row;
+	margin-left:4.5%;
+	background-color:#23332D;
+	width:inherit;
+	height:inherit;
+	flex-wrap: wrap;
+
+}
+
+.pokemonData{
+	display: flex;
+	flex-direction: column;
+	background-color:grey;
+	margin:auto;
+	width:60%;
+	height: 100%;
+
+}
+
+.pokemonSprite{
+	margin-bottom: 4px;
+}
+
+
