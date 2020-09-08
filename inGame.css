@@ -21,7 +21,6 @@
 .display{
 	display: flex;
 	justify-content: space-between;
-	background-color:grey;
 	/*margin:auto;*/
 	width:50%;
 	height: 100vh;
