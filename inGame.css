@@ -1,4 +1,15 @@
 
+h3{
+	margin-left:25%;
+}
+
+.in-game-img{
+	margin:auto;
+	background-image: url("res/img-grid-background.svg");
+	background-size: 250%;
+	border-radius: 2%;
+}
+
 .gameContainer{
 	display:flex;
 	width:100%;
@@ -6,12 +17,14 @@
 }
 
 .myPokemon{
+	width:20%;
 	margin-left:auto;
 	margin-right:auto;
 	/*display: flex;*/
 }
 
 .enemyPokemon{
+	width:20%;
 	margin-left:auto;
 	margin-right:auto;
 	/*display: flex;*/
@@ -20,11 +33,182 @@
 
 .display{
 	display: flex;
-	justify-content: space-between;
-	/*margin:auto;*/
+	align-items: flex-end;
+	margin:auto;
 	width:50%;
 	height: 100vh;
+	background-image: url("res/grass_14.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+.controls{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	z-index:1;
+	margin-right: -200px;
+	margin-bottom: 20px;
+	padding-left:30px;
+	width:200px;
+	height:150px;
+}
+
+#attackButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: white;
+	width:50px;
+	height:50px;
+	margin-left:20%;
+	margin-right:32%;
+	border-radius:70%;
+	border-width: 4px;
+
+}
+
+#move1-button{
+	background-color: red;
+	border-top-left-radius: 100%;
+	border-right-color: transparent;
+	margin-bottom:-25px;
+	border-top-width: 2.5px;
+	/* margin-right: 8px; */
+}
+
+#move2-button{
+	border-top-right-radius: 100%;
+	border-left-color:	transparent;
+	background-color: red;
+	border-top-width: 2.75px;
+	border-right-width: 3.25px;
+	margin-bottom:-25px;
+}
+
+#move3-button{
+	border-bottom-right-radius:100%;
+	border-left-color:	transparent;
+	background-color: white;
+	border-bottom-width: 3.5px;
+	border-right-width: 3.25px;
+	margin-top: -25px;
+}
+
+#move4-button{
+	border-bottom-left-radius: 100%;
+	border-right-color: transparent;
+	background-color: white;
+	margin-top: -25px;
+	border-bottom-width: 3.25px;
+	/* margin-right: 8px; */
+}
+
+.moves{
+	
+	width: 80px;
+	height: 80px;
+	border-color: black;
+}
+
+.health{
+	display: none;
+	position: absolute;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width:120px;
+	height: 15px;
+	background-color: grey;
+	border-radius:5px;	
+	border:2px solid black;
+}
+
+
+#healthbar-enemy{
+	display: flex;
+	width: 121px;
+	height: 18px;
+	background-color: #28e27c;
+	transition: width 0.4s ease-in-out;
+	z-index: 2;
+	border-radius:5px;	
+	margin:-0.5px;
+	margin-bottom:-1px;
+}
+#health-text-enemy{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius:5px;	
+	z-index:3;	
+}
+#background-color-enemy{
+	display: flex;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	border-radius:5px;	
+	background-color: grey;
+}
+
+#healthbar-player{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: #28e27c;
+	transition: width 0.4s ease-in-out;
+	z-index: 2;
+	border-radius:5px;
+	margin:-0.2px;
+}
+#health-text-player{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius:5px;	
+	z-index:3;
+}
+#background-color-player{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius:5px;	
+	background-color: grey;
+	margin:-0.2px;
+}
+
+.game-over-container{
+	display:flex;
+	width:100%;
+	height:100%;
+	background-image: url(res/you-died.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index:9;
+}
+
+.replay{
+	margin:auto
+}
+
+.replay button {
+	margin-right:5px;
+	margin-top:80%;
+	width: 250px;
+	height: 125px;
+	border-radius: 15px;
+	background:green;
+	border-color:transparent;
 }
 
 

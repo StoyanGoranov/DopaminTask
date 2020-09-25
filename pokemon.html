@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Pokemon Mortal Kombat</title>
 	<link rel="stylesheet" type="text/css" href="menu.css">
 	<link rel="stylesheet" type="text/css" href="inGame.css">
-	<script type="text/javascript" src="pixi.js"></script>
 </head>
+
 <body>
 	<div class="menu">
 		<div class="container"></div>
+
+
 	</div>
+
 
 	<div class="pokemonData">
 		<h2>Choose A Pokemon</h2>
@@ -30,11 +34,36 @@
 
 	</div>
 
+	<div class="health">
+		<!-- Pokemon HP -->
+		<div id="background-color-player"></div>
+		<span id="health-text-player"></span>
+		<div id="healthbar-player"></div>
 
-	<script type="text/javascript" src="gottaFetchEmAll.js"></script>
-	<script type="text/javascript" src="menu.js"></script>
-	<script type="text/javascript" src="menuFunctions.js"></script>
-	<script type="text/javascript" src="objects.js"></script>
-	<script type="text/javascript" src="game.js"></script>
+	</div>
+	<div class="health">
+		<!-- Pokemon HP -->
+		<div id="background-color-enemy"></div>
+		<span id="health-text-enemy"></span>
+		<div id="healthbar-enemy"></div>
+	</div>
+
+
+
+
+
 </body>
+<script type="text/javascript" src="pixi.js"></script>
+<script type="text/javascript" src="transition.min.js"></script>
+
+<script type="text/javascript" src="gottaFetchEmAll.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="interface-methods.js"></script>
+<script type="text/javascript" src="game-methods.js"></script>
+<script type="text/javascript" src="game-events.js"></script>
+<script type="text/javascript" src="Gameplay.js"></script>
+<script type="text/javascript" src="Pokemon.js"></script>
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="combat-methods.js"></script>
+
 </html>

@@ -4,12 +4,18 @@ html, body{
 
 body{
 	overflow-x:hidden;
-	/*overflow-y:hidden;*/
+	overflow-y:hidden;
 	margin:0;
 	display: flex;
 	flex-direction: column-reverse;
+	background-image: url("res/grey.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
+button {
+	outline: none;
+}
 h2{
 	/*display: flex;*/
 	margin-left:auto;
@@ -48,15 +54,22 @@ img{
 .pokemonData{
 	display: flex;
 	flex-direction: column;
-	background-color:grey;
+	background-image:url(res/pokeData.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:green;
 	margin:auto;
 	width:60%;
 	height: 100%;
 
 }
 
+.move_desc{
+	background-color: green;
+	display:none;
+}
+
 .pokemonSprite{
 	margin-bottom: 4px;
 }
-
 
